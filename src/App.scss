@@ -1,0 +1,115 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transition: background-image 0.5s ease-in-out;
+}
+
+.quiz-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px;
+}
+
+input[type="text"],
+input[type="checkbox"],
+input[type="radio"] {
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="text"] {
+  border: 2px solid #d4d4d4;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 16px;
+
+  &:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.3);
+  }
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #d4d4d4;
+  border-radius: 4px;
+  margin-right: 8px;
+  position: relative;
+  cursor: pointer;
+
+  &:checked {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+
+    &:after {
+      content: '\2714';
+      font-size: 14px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+    }
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.3);
+  }
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #d4d4d4;
+  border-radius: 50%;
+  margin-right: 8px;
+  position: relative;
+  cursor: pointer;
+
+  &:checked {
+    border-color: #4CAF50;
+
+    &:after {
+      content: '';
+      width: 10px;
+      height: 10px;
+      background-color: #4CAF50;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.3);
+  }
+}
+
+label {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:hover,
+input[type="radio"]:hover {
+  border-color: #45a049;
+}
+
+.option-container input {
+  margin-bottom: -4px;
+}

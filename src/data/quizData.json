@@ -1,0 +1,102 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "type": "one-choice",
+      "title": "Question 1",
+      "topic": "Geography",
+      "description": "This is a one-choice question about Geography",
+      "image": "/assets/istockphoto.jpg",
+      "question": "What is the capital of France?",
+      "options": [
+        { "value": "paris", "text": "Paris" },
+        { "value": "london", "text": "London" },
+        { "value": "berlin", "text": "Berlin" }
+      ],
+      "correctAnswer": "paris",
+      "nextQuestion": {
+        "paris": "q2",
+        "default": "q3"
+      },
+      "difficulty": "easy",
+      "hint": "This city is known as the City of Light"
+    },
+    {
+      "id": "q1b",
+      "type": "one-choice",
+      "title": "Question 1B",
+      "topic": "History",
+      "description": "This is a one-choice question about History",
+      "question": "In which year did World War II end?",
+      "options": [
+        { "value": "1945", "text": "1945" },
+        { "value": "1939", "text": "1939" },
+        { "value": "1950", "text": "1950" }
+      ],
+      "correctAnswer": "1945",
+      "nextQuestion": "q2",
+      "difficulty": "easy",
+      "hint": "It was in the mid-1940s"
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "title": "Question 2",
+      "topic": "Programming",
+      "description": "This is a multiple-choice question about Programming",
+      "question": "Which of these are programming languages?",
+      "options": [
+        { "value": "python", "text": "Python" },
+        { "value": "java", "text": "Java" },
+        { "value": "html", "text": "HTML" },
+        { "value": "css", "text": "CSS" }
+      ],
+      "correctAnswer": ["python", "java"],
+      "nextQuestion": "q3",
+      "difficulty": "medium",
+      "hint": "Two of these are not programming languages"
+    },
+    {
+      "id": "q2b",
+      "type": "multiple-choice",
+      "title": "Question 2B",
+      "topic": "Science",
+      "description": "This is a multiple-choice question about Science",
+      "question": "Which of these are noble gases?",
+      "options": [
+        { "value": "helium", "text": "Helium" },
+        { "value": "neon", "text": "Neon" },
+        { "value": "oxygen", "text": "Oxygen" },
+        { "value": "nitrogen", "text": "Nitrogen" }
+      ],
+      "correctAnswer": ["helium", "neon"],
+      "nextQuestion": "q3",
+      "difficulty": "medium",
+      "hint": "These gases are in the rightmost column of the periodic table"
+    },
+    {
+      "id": "q3",
+      "type": "input",
+      "title": "Question 3",
+      "topic": "Technology",
+      "description": "This is an input question about Technology",
+      "question": "What year was JavaScript created?",
+      "correctAnswer": "1995",
+      "nextQuestion": "end",
+      "difficulty": "hard",
+      "hint": "It was created in the same year as the release of Windows 95"
+    },
+    {
+      "id": "q3b",
+      "type": "input",
+      "title": "Question 3B",
+      "topic": "Literature",
+      "description": "This is an input question about Literature",
+      "question": "Who wrote '1984'?",
+      "correctAnswer": "George Orwell",
+      "nextQuestion": "end",
+      "difficulty": "hard",
+      "hint": "The author's real name was Eric Arthur Blair"
+    }
+  ]
+}

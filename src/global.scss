@@ -1,0 +1,89 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Quicksand', sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transition: background-image 0.5s ease-in-out;
+}
+
+.quiz-engine {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.question {
+  transition: color 0.3s ease-in-out;
+}
+
+.option-container {
+  margin-bottom: 10px;
+}
+
+.option-container input[type="checkbox"],
+.option-container input[type="radio"] {
+  margin-right: 10px;
+}
+
+.option-container label span {
+  transition: color 0.3s ease;
+}
+
+.option-container input:checked + label span.correct,
+.input-container input[type="text"].correct {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.option-container input:checked + label span.incorrect,
+.input-container input[type="text"].incorrect {
+  color: #f44336;
+  font-weight: bold;
+}
+
+.input-container input[type="text"] {
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.input-container {
+  padding-right: 20px;
+}
+
+.quiz-end-screen {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+
+  .feedback-buttons {
+    margin-top: 20px;
+
+    button {
+      font-size: 24px;
+      margin: 0 10px;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  .feedback-modal {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+  }
+}
